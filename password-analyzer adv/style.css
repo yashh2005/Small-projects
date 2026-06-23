@@ -1,0 +1,92 @@
+/* Basic */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #fff;
+  padding: 22px;
+  border-radius: 12px;
+  width: 420px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+input#password {
+  padding: 10px;
+  width: 80%;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+button#toggle {
+  padding: 9px;
+  border: none;
+  background: #eee;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Strength meter */
+.meter {
+  margin-top: 14px;
+  height: 12px;
+  background: #e9edf2;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.fill {
+  width: 0%;
+  height: 100%;
+  transition: width 220ms ease, background 220ms ease;
+  background: red;
+}
+
+/* Suggestions */
+#strength-text {
+  margin: 10px 0 6px;
+  font-weight: 600;
+}
+
+#suggestions {
+  text-align: left;
+  margin: 6px 0 12px;
+  padding-left: 18px;
+}
+
+/* Crack-time block */
+.crack-block {
+  margin-top: 12px;
+  text-align: left;
+  background: #fbfcff;
+  border: 1px solid #eef3ff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#crack-time {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.note {
+  display: block;
+  margin-top: 8px;
+  color: #666;
+  font-size: 12px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Password Strength Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Password Strength Analyzer</h1>
+
+    <div class="row">
+      <input type="password" id="password" placeholder="Enter your password" />
+      <button id="toggle">👁️</button>
+    </div>
+
+    <div class="meter">
+      <div id="strength-fill" class="fill"></div>
+    </div>
+    <p id="strength-text">Strength: —</p>
+
+    <ul id="suggestions"></ul>
+
+    <!-- NEW: Crack time output -->
+    <div class="crack-block">
+      <h3>Estimated crack times (approx.)</h3>
+      <div id="crack-time"></div>
+      <small class="note">These are rough estimates based on entropy and several attacker speeds. All calculation occurs locally — your password is never sent anywhere.</small>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
